@@ -1,0 +1,44 @@
+name: aprender_c1
+description: Aplicativo de treino do modulo C1 Aprender+
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.8.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  video_player: 2.10.1
+
+dependency_overrides:
+  video_player_android: 2.8.10
+  video_player_avfoundation: 2.7.1
+  video_player_platform_interface: 6.3.0
+  video_player_web: 2.3.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/Artigo/artigos.json
+    - assets/Artigo/artigo_2_detalhado.json
+    - assets/logo.png
+    - assets/SplashScreen.mp4
+    - assets/video_fisica.mp4
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Montserrat-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Montserrat-ThinItalic.ttf
+          weight: 100
+          style: italic
